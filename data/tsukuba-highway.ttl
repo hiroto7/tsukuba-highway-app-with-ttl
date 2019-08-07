@@ -1,0 +1,271 @@
+@base <http://www.coins.tsukuba.ac.jp/~s1711402/lod/tsukuba-highway.ttl#> .
+@prefix bp: <http://www.coins.tsukuba.ac.jp/~s1711402/lod/tsukuba-highway/property/> . 
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ic: <http://imi.go.jp/ns/core/rdf#> .
+
+<> cc:attributionName "Hiroto MAMBA" ;
+   cc:license <http://creativecommons.org/publicdomain/zero/1.0/deed.ja> .
+<#土浦学園線>  rdfs:label "土浦学園線"@ja ;
+ bp:length "10.6"^^xsd:double ;
+ bp:category "road" ;
+ bp:車線数 "6"^^xsd:integer ;
+ bp:車線数 "4"^^xsd:integer ;
+ bp:起点 "茨城県土浦市桜町1丁目" ;
+ bp:起点 [ic:経度 "140.203073"^^xsd:double ;
+         ic:緯度 "36.077948"^^xsd:double] ;
+ bp:終点 "茨城県つくば市松代" ;
+ bp:終点 <#松代交差点> ;
+ bp:終点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:route <https://www.coins.tsukuba.ac.jp/~s1711402/lod/tsukuba-highway/土浦学園線.json> ;
+ bp:接続道路 <#学園東大通り> ;
+ bp:接続道路 <#学園西大通り> ;
+ bp:接続道路 <#牛久学園通り> ;
+ bp:接続道路 <#エキスポ大通り> .
+
+<#学園東大通り>  rdfs:label "学園東大通り"@ja ;
+ bp:length "17.1"^^xsd:double ;
+ bp:category "road" ;
+ bp:車線数 "6"^^xsd:integer ;
+ bp:車線数 "4"^^xsd:integer ;
+ bp:起点 "茨城県土浦市中村南" ;
+ bp:起点 <#学園東大通り入口交差点> ;
+ bp:起点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:終点 "茨城県つくば市田中" ;
+ bp:終点 <#田中交差点> ;
+ bp:終点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:route <https://www.coins.tsukuba.ac.jp/~s1711402/lod/tsukuba-highway/学園東大通り.json> ;
+ bp:接続道路 <#学園南大通り> ;
+ bp:接続道路 <#土浦学園線> ;
+ bp:接続道路 <#学園中央通り> ;
+ bp:接続道路 <#学園北大通り> ;
+ bp:接続道路 <#平塚通り> ;
+ bp:接続道路 <#学園西大通り> .
+
+<#学園西大通り>  rdfs:label "学園西大通り"@ja ;
+ bp:length "19.5"^^xsd:double ;
+ bp:category "road" ;
+ bp:車線数 "6"^^xsd:integer ;
+ bp:車線数 "4"^^xsd:integer ;
+ bp:起点 "茨城県つくば市筑穂1丁目" ;
+ bp:起点 <#西大通り入口交差点> ;
+ bp:起点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:終点 "茨城県稲敷郡阿見町実穀" ;
+ bp:終点 [ic:経度 "140.17779"^^xsd:double ;
+         ic:緯度 "36.002025"^^xsd:double] ;
+ bp:route <https://www.coins.tsukuba.ac.jp/~s1711402/lod/tsukuba-highway/学園西大通り.json> ;
+ bp:接続道路 <#学園南大通り> ;
+ bp:接続道路 <#土浦学園線> ;
+ bp:接続道路 <#学園中央通り> ;
+ bp:接続道路 <#新都市中央通り> ;
+ bp:接続道路 <#学園北大通り> ;
+ bp:接続道路 <#平塚通り> .
+
+<#学園北大通り>  rdfs:label "学園北大通り"@ja ;
+ bp:length "1"^^xsd:double ;
+ bp:category "road" ;
+ bp:車線数 "6"^^xsd:integer ;
+ bp:起点 "茨城県つくば市天久保1丁目" ;
+ bp:起点 <#妻木交差点> ;
+ bp:起点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:終点 "茨城県つくば市春日1丁目" ;
+ bp:終点 <#春日1丁目西交差点> ;
+ bp:終点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:route <https://www.coins.tsukuba.ac.jp/~s1711402/lod/tsukuba-highway/学園北大通り.json> ;
+ bp:接続道路 <#学園東大通り> ;
+ bp:接続道路 <#学園西大通り> ;
+ bp:接続道路 <#新都市中央通り> .
+
+<#学園中央通り>  rdfs:label "学園中央通り"@ja ;
+ bp:length "0.97"^^xsd:double ;
+ bp:category "road" ;
+ bp:車線数 "6"^^xsd:integer ;
+ bp:起点 "茨城県つくば市吾妻4丁目" ;
+ bp:起点 <#吾妻4丁目西交差点> ;
+ bp:起点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:終点 "茨城県つくば市吾妻2丁目" ;
+ bp:終点 <#吾妻西交差点> ;
+ bp:終点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:route <https://www.coins.tsukuba.ac.jp/~s1711402/lod/tsukuba-highway/学園中央通り.json> ;
+ bp:接続道路 <#学園東大通り> ;
+ bp:接続道路 <#学園西大通り> .
+
+<#新都市中央通り>  rdfs:label "新都市中央通り"@ja ;
+ bp:length "13.6"^^xsd:double ;
+ bp:category "road" ;
+ bp:車線数 "4"^^xsd:integer ;
+ bp:起点 "茨城県つくば市春日1丁目" ;
+ bp:起点 <#春日1丁目西交差点> ;
+ bp:起点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:終点 "茨城県つくば市境田" ;
+ bp:終点 [ic:経度 "140.074029"^^xsd:double ;
+         ic:緯度 "36.010102"^^xsd:double] ;
+ bp:route <https://www.coins.tsukuba.ac.jp/~s1711402/lod/tsukuba-highway/新都市中央通り.json> ;
+ bp:接続道路 <#学園北大通り> ;
+ bp:接続道路 <#学園西大通り> .
+
+<#学園南大通り>  rdfs:label "学園南大通り"@ja ;
+ bp:length "1"^^xsd:double ;
+ bp:category "road" ;
+ bp:車線数 "6"^^xsd:integer ;
+ bp:起点 "茨城県つくば市竹園" ;
+ bp:起点 <#南大通り東交差点> ;
+ bp:起点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:終点 "茨城県つくば市東新井" ;
+ bp:終点 <#南大通り西交差点> ;
+ bp:終点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:route <https://www.coins.tsukuba.ac.jp/~s1711402/lod/tsukuba-highway/学園南大通り.json> ;
+ bp:接続道路 <#学園北大通り> ;
+ bp:接続道路 <#学園西大通り> .
+
+<#エキスポ大通り>  rdfs:label "エキスポ大通り"@ja ;
+ bp:length "5.44"^^xsd:double ;
+ bp:category "road" ;
+ bp:車線数 "6"^^xsd:integer ;
+ bp:車線数 "4"^^xsd:integer ;
+ bp:起点 "茨城県つくば市松代" ;
+ bp:起点 <#松代交差点> ;
+ bp:起点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:終点 "茨城県つくば市上河原崎" ;
+ bp:終点 [ic:経度 "140.03991"^^xsd:double ;
+         ic:緯度 "36.074119"^^xsd:double] ;
+ bp:route <https://www.coins.tsukuba.ac.jp/~s1711402/lod/tsukuba-highway/エキスポ大通り.json> ;
+ bp:接続道路 <#土浦学園線> ;
+ bp:接続道路 <#牛久学園通り> ;
+ bp:接続道路 <#サイエンス大通り> .
+
+<#牛久学園通り>  rdfs:label "牛久学園通り"@ja ;
+ bp:length "8.7"^^xsd:double ;
+ bp:category "road" ;
+ bp:車線数 "4"^^xsd:integer ;
+ bp:起点 "茨城県牛久市柏田町" ;
+ bp:起点 <#学園都市南入口交差点> ;
+ bp:起点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:終点 "茨城県つくば市松代" ;
+ bp:終点 <#松代交差点> ;
+ bp:終点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:route <https://www.coins.tsukuba.ac.jp/~s1711402/lod/tsukuba-highway/牛久学園通り.json> ;
+ bp:接続道路 <#土浦学園線> ;
+ bp:接続道路 <#エキスポ大通り> .
+
+<#サイエンス大通り>  rdfs:label "サイエンス大通り"@ja ;
+ bp:length "5.8"^^xsd:double ;
+ bp:category "road" ;
+ bp:車線数 "6"^^xsd:integer ;
+ bp:車線数 "4"^^xsd:integer ;
+ bp:起点 "茨城県つくば市羽成" ;
+ bp:起点 <#谷田部インターチェンジ> ;
+ bp:起点 [ic:経度 "140.087209"^^xsd:double ;
+         ic:緯度 "36.021757"^^xsd:double] ;
+ bp:終点 "茨城県つくば市西大橋" ;
+ bp:終点 <#大境交差点> ;
+ bp:終点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:route <https://www.coins.tsukuba.ac.jp/~s1711402/lod/tsukuba-highway/サイエンス大通り.json> ;
+ bp:接続道路 <#エキスポ大通り> .
+
+<#平塚通り>  rdfs:label "平塚通り"@ja ;
+ bp:length "1.99"^^xsd:double ;
+ bp:category "road" ;
+ bp:車線数 "4"^^xsd:integer ;
+ bp:起点 "茨城県つくば市天久保3丁目" ;
+ bp:起点 <#柴崎交差点> ;
+ bp:起点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:終点 "茨城県つくば市西平塚" ;
+ bp:終点 <#西平塚交差点> ;
+ bp:終点 [ic:経度 ""^^xsd:double ;
+         ic:緯度 ""^^xsd:double] ;
+ bp:route <https://www.coins.tsukuba.ac.jp/~s1711402/lod/tsukuba-highway/平塚通り.json> ;
+ bp:接続道路 <#学園東大通り> ;
+ bp:接続道路 <#学園西大通り> .
+
+<#学園東大通り入口交差点>  rdfs:label "学園東大通り入口交差点"@ja ;
+ bp:category "point" ;
+ ic:座標 [ic:経度  "140.16321"^^xsd:float ;
+         ic:緯度  "36.037742"^^xsd:float] .
+
+<#西大通り入口交差点>  rdfs:label "西大通り入口交差点"@ja ;
+ bp:category "point" ;
+ ic:座標 [ic:経度  "140.082404"^^xsd:float ;
+         ic:緯度  "36.138343"^^xsd:float] .
+
+<#妻木交差点>  rdfs:label "妻木交差点"@ja ;
+ bp:category "point" ;
+ ic:座標 [ic:経度  "140.112849"^^xsd:float ;
+         ic:緯度  "36.091708"^^xsd:float] .
+
+<#吾妻4丁目西交差点>  rdfs:label "吾妻4丁目西交差点"@ja ;
+ bp:category "point" ;
+ ic:座標 [ic:経度  "140.117439"^^xsd:float ;
+         ic:緯度  "36.085402"^^xsd:float] .
+
+<#春日1丁目西交差点>  rdfs:label "春日1丁目西交差点"@ja ;
+ bp:category "point" ;
+ ic:座標 [ic:経度  "140.103176"^^xsd:float ;
+         ic:緯度  "36.087304"^^xsd:float] .
+
+<#田中交差点>  rdfs:label "田中交差点"@ja ;
+ bp:category "point" ;
+ ic:座標 [ic:経度  "140.071591"^^xsd:float ;
+         ic:緯度  "36.179166"^^xsd:float] .
+
+<#吾妻西交差点>  rdfs:label "吾妻西交差点"@ja ;
+ bp:category "point" ;
+ ic:座標 [ic:経度  "140.107586"^^xsd:float ;
+         ic:緯度  "36.080922"^^xsd:float] .
+
+<#松代交差点>  rdfs:label "松代交差点"@ja ;
+ bp:category "point" ;
+ ic:座標 [ic:経度  "140.097073"^^xsd:float ;
+         ic:緯度  "36.072932"^^xsd:float] .
+
+<#南大通り東交差点>  rdfs:label "南大通り東交差点"@ja ;
+ bp:category "point" ;
+ ic:座標 [ic:経度  "140.123873"^^xsd:float ;
+         ic:緯度  "36.076568"^^xsd:float] .
+
+<#南大通り西交差点>  rdfs:label "南大通り西交差点"@ja ;
+ bp:category "point" ;
+ ic:座標 [ic:経度  "140.113772"^^xsd:float ;
+         ic:緯度  "36.071968"^^xsd:float] .
+
+<#学園都市南入口交差点>  rdfs:label "学園都市南入口交差点"@ja ;
+ bp:category "point" ;
+ ic:座標 [ic:経度  "140.145117"^^xsd:float ;
+         ic:緯度  "35.991612"^^xsd:float] .
+
+<#大境交差点>  rdfs:label "大境交差点"@ja ;
+ bp:category "point" ;
+ ic:座標 [ic:経度  "140.084588"^^xsd:float ;
+         ic:緯度  "36.07247"^^xsd:float] .
+
+<#谷田部インターチェンジ>  rdfs:label "谷田部インターチェンジ"@ja ;
+ bp:category "point" ;
+ ic:座標 [ic:経度  "140.080425"^^xsd:float ;
+         ic:緯度  "36.024286"^^xsd:float] .
+
+<#柴崎交差点>  rdfs:label "柴崎交差点"@ja ;
+ bp:category "point" ;
+ ic:座標 [ic:経度  "140.107332"^^xsd:float ;
+         ic:緯度  "36.108773"^^xsd:float] .
+
+<#西平塚交差点>  rdfs:label "西平塚交差点"@ja ;
+ bp:category "point" ;
+ ic:座標 [ic:経度  "140.087692"^^xsd:float ;
+         ic:緯度  "36.101336"^^xsd:float] .
