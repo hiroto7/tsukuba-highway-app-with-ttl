@@ -1,0 +1,3 @@
+[submodule "app/master"]
+	path = app/master
+	url = https://github.com/hiroto7/tsukuba-highway.git
