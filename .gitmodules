@@ -1,3 +1,6 @@
 [submodule "app/master"]
 	path = app/master
 	url = https://github.com/hiroto7/tsukuba-highway.git
+[submodule "app/gh-pages"]
+	path = app/gh-pages
+	url = https://github.com/hiroto7/tsukuba-highway.git
